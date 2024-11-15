@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const Header = () => {
   return (
     <header className="bg-gray-800 text-white p-6 flex justify-between items-center">
