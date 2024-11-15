@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "./components/header";
+import Reveal from "./components/reveal";
 import { useState, useRef } from "react";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       setIsPlaying(!isPlaying);
     }
   };
+  const [buttonScale, setButtonScale] = useState("scale-100");
 
   return (
     <main className="h-screen flex flex-col">
@@ -27,14 +29,21 @@ export default function Home() {
           className="absolute top-0 left-0 h-full min-w-full object-cover"
           src="/video.mp4"
           muted
-          loop
         />
-        <button
-          onClick={toggleVideo}
-          className="relative z-10 px-4 py-2 bg-white rounded"
-        >
-          {isPlaying ? "Pause" : "Play"} Background
-        </button>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-4">
+          <p className="text-white text-5xl">ROOT TO REVEAL CA!</p>
+          <button
+            className="h-[226px] cursor-pointer transition-transform ${buttonScale}"
+            onMouseDown={() => {
+              setButtonScale("scale-90"); // 90% size when clicked
+              toggleVideo();
+            }}
+            onMouseUp={() => setButtonScale("scale-100")}
+          >
+            <Reveal />
+          </button>
+          <p className="text-black text-2xl">ROOTS TIL REVEAL: 2 </p>
+        </div>
       </div>
     </main>
   );

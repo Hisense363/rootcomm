@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white flex justify-between items-center">
+    <header className="bg-[#222c44] text-white flex justify-between items-center">
       <div className="mx-auto flex items-center justify-center">
         <svg
           className="w-24 h-24"
