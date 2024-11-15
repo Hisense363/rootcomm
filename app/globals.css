@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.background {
+  background-image: url("/backgroundROOT2.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
