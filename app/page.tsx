@@ -30,9 +30,10 @@ export default function Home() {
       <div className="flex-1 relative">
         <video
           ref={videoRef}
-          className="absolute playsinline top-0 left-0 h-full min-w-full object-cover"
+          className="absolute top-0 left-0 h-full min-w-full object-cover"
           src="/video.webm"
           muted
+          playsInline
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-4">
           {clickCount < 3 ? (
