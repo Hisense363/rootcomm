@@ -1,7 +1,7 @@
 const Header = () => {
   return (
-    <header className="bg-[#222c44] text-white flex justify-between items-center">
-      <div className="mx-auto flex items-center justify-center">
+    <header className="bg-[#222c44] text-white relative h-24">
+      <div className="absolute left-1/2 transform -translate-x-1/2">
         <svg
           className="w-24 h-24"
           viewBox="0 0 287 181"
@@ -21,7 +21,7 @@ const Header = () => {
           <path d="M232.916 20.8407C227.165 20.8407 222.506 16.1778 222.506 10.4208C222.506 4.66286 227.165 0 232.916 0H275.617C281.369 0 286.028 4.66286 286.028 10.4208C286.028 16.1778 281.369 20.8407 275.617 20.8407H270.151C267.229 20.8407 264.856 23.2154 264.856 26.141V72.7725C264.856 78.6227 260.119 83.3712 254.266 83.3712C248.414 83.3712 243.677 78.6293 243.677 72.7725V26.141C243.677 23.2154 241.305 20.8407 238.383 20.8407H232.916Z" />
         </svg>
       </div>
-      <nav>
+      <nav className="flex justify-end h-full items-center">
         <ul className="flex space-x-6 mr-10">
           <li>
             {/* X (Telegram) */}
