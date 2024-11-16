@@ -30,16 +30,19 @@ export default function Home() {
       <div className="flex-1 relative">
         <video
           ref={videoRef}
-          className="absolute top-0 left-0 h-full min-w-full object-cover"
+          className="absolute top-0 left-0 h-full min-w-full object-cover hidden"
           src="/video.webm"
           muted
           playsInline
         />
+        <img
+          src="/backgroundROOT.webp"
+          className="absolute top-0 left-0 h-full min-w-full object-cover"
+          alt="background"
+        />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-4">
           {clickCount < 3 ? (
-            <p className="text-white md:text-5xl text-4xl">
-              ROOT TO REVEAL CA!
-            </p>
+            <p className="text-black text-4xl">ROOT TO REVEAL CA!</p>
           ) : (
             <a
               href="https://dexscreener.com/sui/0xe497e8366f8d01ea68c07542e6b665c5f5f9d6cdae894dd0a49b63a28256fe97?__cf_chl_tk=5pD5KH16XNX_bWMJW53KD7GrDSZAqDSSu0RfHKo4m1w-1731718803-1.0.1.1-D_l.piXwNoVrK199paeKqFDqPbVZq9FeNuLPKzc8Dv0"
@@ -76,7 +79,7 @@ export default function Home() {
             </svg>
           </button>
 
-          <p className="text-black text-2xl">
+          <p className="text-black text-3xl">
             {clickCount < 3
               ? `ROOTS TIL REVEAL: ${3 - clickCount}`
               : "REVEALED!"}
