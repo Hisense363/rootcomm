@@ -22,7 +22,7 @@ const Header = () => {
         </svg>
       </div>
       <nav className="flex justify-end h-full items-center">
-        <ul className="flex space-x-6 mr-10">
+        <ul className="flex space-x-6 md:mr-5 mr-6">
           <li>
             {/* X (Telegram) */}
             <a

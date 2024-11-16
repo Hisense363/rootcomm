@@ -44,6 +44,7 @@ export default function Home() {
             <a
               href="https://dexscreener.com/sui/0xe497e8366f8d01ea68c07542e6b665c5f5f9d6cdae894dd0a49b63a28256fe97?__cf_chl_tk=5pD5KH16XNX_bWMJW53KD7GrDSZAqDSSu0RfHKo4m1w-1731718803-1.0.1.1-D_l.piXwNoVrK199paeKqFDqPbVZq9FeNuLPKzc8Dv0"
               className="bg-[#CF6468] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 text-4xl"
+              target="_blank"
             >
               GET CA!
             </a>
