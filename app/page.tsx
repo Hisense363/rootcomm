@@ -5,7 +5,6 @@ import { useState, useRef } from "react";
 
 export default function Home() {
   const [clickCount, setClickCount] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
 
@@ -18,7 +17,6 @@ export default function Home() {
       if (clickCount === 2 && videoRef.current) {
         // On third click
         videoRef.current.play();
-        setIsPlaying(true);
       }
     }
   };
