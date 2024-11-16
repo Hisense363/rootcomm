@@ -30,7 +30,7 @@ export default function Home() {
       <div className="flex-1 relative">
         <video
           ref={videoRef}
-          className="absolute top-0 left-0 h-full min-w-full object-cover"
+          className="absolute playsinline top-0 left-0 h-full min-w-full object-cover"
           src="/video.webm"
           muted
         />
@@ -54,7 +54,11 @@ export default function Home() {
             onMouseDown={() => {
               setButtonScale("scale-90"); // 90% size when clicked
             }}
+            onTouchStart={() => {
+              setButtonScale("scale-90"); // 90% size when clicked
+            }}
             onMouseUp={() => setButtonScale("scale-100")}
+            onTouchEnd={() => setButtonScale("scale-100")}
           >
             <svg
               className={`w-96 h-96 pointer-events-none ${buttonScale}`}
