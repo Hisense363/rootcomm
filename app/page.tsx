@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "./components/header";
+import RunningButton from "./components/cursor";
 import { useState, useRef } from "react";
 
 export default function Home() {
@@ -85,6 +86,7 @@ export default function Home() {
               : "REVEALED!"}
           </p>
         </div>
+        <RunningButton />
       </div>
     </main>
   );

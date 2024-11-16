@@ -82,8 +82,9 @@ const Header = () => {
           <li>
             {/* X (Telegram) */}
             <a
-              href="telegram.com"
+              href="https://t.me/+sfHunAtee2NiZGY1"
               className="hover:text-blue-400 inline-flex items-center"
+              target="_blank"
             >
               <svg
                 className="w-12 h-12 m-auto"
@@ -97,8 +98,9 @@ const Header = () => {
           <li>
             {/* X (Twitter) */}
             <a
-              href="x.com"
+              href="https://x.com/root_community"
               className="hover:text-blue-400 inline-flex items-center"
+              target="_blank"
             >
               <svg
                 className="w-10 h-10 m-auto"
