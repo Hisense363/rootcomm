@@ -69,10 +69,11 @@ const Header = () => {
           >
             Wall of Shame
           </a>
-          <a href="x.com" className="hover:text-blue-400">
-            <svg className="w-10 h-10" viewBox="0 0 300 271">
-              {/* Your X/Twitter SVG */}
-            </svg>
+          <a href="x.com" className="hover:text-blue-400 text-5xl">
+            Root around the World
+          </a>
+          <a href="x.com" className="hover:text-blue-400 text-5xl">
+            Meet the Rootlets
           </a>
         </div>
       </div>

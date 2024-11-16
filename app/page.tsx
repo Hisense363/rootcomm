@@ -10,15 +10,10 @@ export default function Home() {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const handleClick = () => {
-    if (audioRef.current && clickCount < 3) {
+    if (audioRef.current) {
       audioRef.current.currentTime = 0; // Reset audio to start
       audioRef.current.play();
       setClickCount((prev) => prev + 1);
-
-      if (clickCount === 2 && videoRef.current) {
-        // On third click
-        videoRef.current.play();
-      }
     }
   };
 
@@ -43,15 +38,25 @@ export default function Home() {
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-4">
           {clickCount < 3 ? (
-            <p className="text-black text-4xl">ROOT TO REVEAL CA!</p>
+            <p className="text-black text-4xl">ROOT TO REVEAL!</p>
           ) : (
-            <a
-              href="https://dexscreener.com/sui/0xe497e8366f8d01ea68c07542e6b665c5f5f9d6cdae894dd0a49b63a28256fe97?__cf_chl_tk=5pD5KH16XNX_bWMJW53KD7GrDSZAqDSSu0RfHKo4m1w-1731718803-1.0.1.1-D_l.piXwNoVrK199paeKqFDqPbVZq9FeNuLPKzc8Dv0"
-              className="bg-[#CF6468] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 text-4xl"
-              target="_blank"
-            >
-              GET CA!
-            </a>
+            <div className="flex flex-col gap-4">
+              <a
+                href="https://dexscreener.com/sui/0xe497e8366f8d01ea68c07542e6b665c5f5f9d6cdae894dd0a49b63a28256fe97?__cf_chl_tk=5pD5KH16XNX_bWMJW53KD7GrDSZAqDSSu0RfHKo4m1w-1731718803-1.0.1.1-D_l.piXwNoVrK199paeKqFDqPbVZq9FeNuLPKzc8Dv0"
+                className="bg-[#CF6468] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 text-4xl flex items-center justify-center"
+                target="_blank"
+              >
+                GET CA!
+              </a>
+              <a
+                href="https://www.tradeport.xyz/sui/collection/rootlets"
+                className="bg-[#CF6468] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 text-4xl flex items-center justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GET ROOTLET!
+              </a>
+            </div>
           )}
 
           <button
@@ -86,7 +91,7 @@ export default function Home() {
               : "REVEALED!"}
           </p>
         </div>
-        <RunningButton />
+        {clickCount < 3 ? <div></div> : <RunningButton />}
       </div>
     </main>
   );
