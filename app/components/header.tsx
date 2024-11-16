@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,12 +70,12 @@ const Header = () => {
           >
             Wall of Shame
           </a>
-          <a href="x.com" className="hover:text-blue-400 text-5xl">
+          <Link href="/map" className="hover:text-blue-400 text-5xl">
             Root around the World
-          </a>
-          <a href="x.com" className="hover:text-blue-400 text-5xl">
+          </Link>
+          <Link href="/" className="hover:text-blue-400 text-5xl">
             Meet the Rootlets
-          </a>
+          </Link>
         </div>
       </div>
 
