@@ -31,7 +31,7 @@ export default function Home() {
         <video
           ref={videoRef}
           className="absolute top-0 left-0 h-full min-w-full object-cover"
-          src="/video.mp4"
+          src="/video.webm"
           muted
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center gap-4">
