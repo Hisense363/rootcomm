@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="bg-[#222c44] text-white relative h-24">
       <div className="absolute left-1/2 transform -translate-x-1/2">
@@ -21,6 +24,59 @@ const Header = () => {
           <path d="M232.916 20.8407C227.165 20.8407 222.506 16.1778 222.506 10.4208C222.506 4.66286 227.165 0 232.916 0H275.617C281.369 0 286.028 4.66286 286.028 10.4208C286.028 16.1778 281.369 20.8407 275.617 20.8407H270.151C267.229 20.8407 264.856 23.2154 264.856 26.141V72.7725C264.856 78.6227 260.119 83.3712 254.266 83.3712C248.414 83.3712 243.677 78.6293 243.677 72.7725V26.141C243.677 23.2154 241.305 20.8407 238.383 20.8407H232.916Z" />
         </svg>
       </div>
+
+      {/* Hamburger button - visible only on mobile */}
+      <button
+        className="fixed left-4 top-7 z-[51]"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <svg
+          className="w-8 h-8"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          {isMenuOpen ? (
+            // X icon when menu is open
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          ) : (
+            // Hamburger icon when menu is closed
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          )}
+        </svg>
+      </button>
+
+      {/* Mobile menu */}
+      <div
+        className={`fixed inset-0 bg-[#222c44] z-50 transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-200 ease-in-out`}
+      >
+        <div className="flex flex-col items-center pt-24 space-y-8">
+          <a
+            href="https://rootlets.community/rootlets-airdrops/"
+            className="hover:text-blue-400 text-5xl"
+          >
+            Wall of Shame
+          </a>
+          <a href="x.com" className="hover:text-blue-400">
+            <svg className="w-10 h-10" viewBox="0 0 300 271">
+              {/* Your X/Twitter SVG */}
+            </svg>
+          </a>
+        </div>
+      </div>
+
       <nav className="flex justify-end h-full items-center">
         <ul className="flex space-x-6 md:mr-5 mr-6">
           <li>
