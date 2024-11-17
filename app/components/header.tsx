@@ -64,17 +64,26 @@ const Header = () => {
         } transition-transform duration-200 ease-in-out`}
       >
         <div className="flex flex-col items-center pt-24 space-y-8">
-          <a
-            href="https://rootlets.community/rootlets-airdrops/"
+          <Link href="/" className="hover:text-blue-400 text-5xl">
+            Home
+          </Link>
+          <Link
+            href="https://rootlets.community/airdrops/"
             className="hover:text-blue-400 text-5xl"
           >
             Wall of Shame
-          </a>
+          </Link>
+          <Link
+            href="https://rootlets.community/community-members/"
+            className="hover:text-blue-400 text-5xl"
+          >
+            Community
+          </Link>
           <Link href="/map" className="hover:text-blue-400 text-5xl">
             Root around the World
           </Link>
-          <Link href="/" className="hover:text-blue-400 text-5xl">
-            Meet the Rootlets
+          <Link href="/stories" className="hover:text-blue-400 text-5xl">
+            Story
           </Link>
         </div>
       </div>

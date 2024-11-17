@@ -9,7 +9,9 @@ export default function MapPage() {
       <div className="flex-1 flex flex-col">
         {" "}
         {/* Remove relative here */}
-        <h1 className="text-4xl font-bold my-8 text-center">Our Community</h1>
+        <h1 className="text-4xl font-bold my-8 text-center">
+          Root around the World
+        </h1>
         <div className="flex-1">
           {" "}
           {/* Make map container take remaining space */}
