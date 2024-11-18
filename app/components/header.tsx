@@ -67,10 +67,7 @@ const Header = () => {
           <Link href="/" className="hover:text-blue-400 text-5xl">
             Home
           </Link>
-          <Link
-            href="https://rootlets.community/airdrops/"
-            className="hover:text-blue-400 text-5xl"
-          >
+          <Link href="/airdrops" className="hover:text-blue-400 text-5xl">
             Wall of Shame
           </Link>
           <Link

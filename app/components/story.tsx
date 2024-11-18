@@ -1,6 +1,6 @@
 "use client";
 
-export default function StoryPage() {
+export default function Story() {
   const stories = [
     { image: "/story0.jpeg", text: "Story text 0" },
     { image: "/story1.jpeg", text: "Story text 1" },
