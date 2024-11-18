@@ -1,7 +1,20 @@
 // app/api/prices/route.ts
 import { NextResponse } from "next/server";
 
-let cachedData: any = null;
+interface TokenData {
+  value: number;
+  updateHumanTime: string;
+  updateUnixTime: number;
+  liquidity: number;
+}
+
+interface TokenPrice {
+  name: string;
+  success: boolean;
+  data: TokenData;
+}
+
+let cachedData: TokenPrice[] | null = null;
 let lastFetch = 0;
 const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 
