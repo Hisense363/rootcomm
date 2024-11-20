@@ -94,6 +94,13 @@ const dropper = [
     link: "https://t.me/+sfHunAtee2NiZGY1",
     amount: 600060,
   },
+  {
+    image: "/drop13.png",
+    title: "$TISM",
+    text: "Each rootlet was airdropped",
+    link: "https://x.com/got__tism",
+    amount: 4500,
+  },
 ];
 
 export default function PricePage() {

@@ -32,6 +32,7 @@ const tokens = {
   FUD: "0x76cb819b01abed502bee8a702b4c2d547532c12f25001c9dea795a5e631c26f1::fud::FUD",
   AAA: "0xd976fda9a9786cda1a36dee360013d775a5e5f206f8e20f84fad3385e99eeb2d::aaa::AAA",
   ROOT: "0x590fe436ab88e3b39e5ddaee688aa24b97ef70f36968e1710584562e244d22b6::root::ROOT",
+  TISM: "0x6612c8419c70a706612e154ffcc0ef21b3fec6e4008b4b775ceae4e894d3484d::tism::TISM",
 };
 
 async function fetchPriceData() {
