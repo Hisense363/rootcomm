@@ -18,7 +18,7 @@ Proposal:
 
 $ROOT(V2)
 
-A finite supply of 500,000,000 tokens. 333,300,000 distributed to Rootlet Holder's over 6 months. 166,700,000 to be held by the $ROOT DAO to be used as Rootlet holder's see fit.
+A finite supply of 10,000,000,000 tokens. 7,000,000,000 distributed to Rootlet Holder's over 6 months. 2,000,000,000 to be held by the $ROOT DAO to be used as Rootlet holder's see fit, and 1,000,000,000 to be airdropped to V1 holders.
 
 Solutions:
 1. Memeability. We can choose a more memeable name/token image design. Rootardio would be one example, but ultimately these should be decided by the community.
@@ -26,5 +26,3 @@ Solutions:
 3. Good distribution. Every Rootlet would share in the success of $ROOT, and minimal would go to outsiders.
 
 Another benefit is that we would have an ample treasury to spend on any community initiatives and support now that capsules are coming to a close.
-
-This would probably be negative for ROOT(V1) at least in the short term. All things to consider.
