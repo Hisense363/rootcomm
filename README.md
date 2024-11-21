@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Rootardio $ROOT (V2)
 
-## Getting Started
+This is a proposal for a new rootlet memecoin that is more aligned with the Rootlet NFT project.
 
-First, run the development server:
+History:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+$ROOT(V1) was launched publicly via BlueMove. There was minimal buy-in from the rootlet community. 20% of supply was purchased and airdropped to the community, but it was a very small portion of tokens. The price cratered until recently, when a revival attempt occured.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Problems:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Limited memeability. "Rootlet" is not a good meme. Unless you are already familiar with the NFT, you won't even know what it is. It should quickly grab attention and explain itself.
+2. Poorly aligned. $ROOT success is not tied to Rootlet's success. They feel disconnected. Only some of the community get's to participate.
+3. Poor distribution. 20% share is not enough to embrace this as a community coin.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The only upside in the current coin is it's hasty launch, and distribution could be seen as so bad that it almost fit's the rootarded brand.
 
-## Learn More
+Proposal:
 
-To learn more about Next.js, take a look at the following resources:
+$ROOT(V2)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A finite supply of 500,000,000 tokens. 333,300,000 distributed to Rootlet Holder's over 6 months. 166,700,000 to be held by the $ROOT DAO to be used as Rootlet holder's see fit.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Solutions:
+1. Memeability. We can choose a more memeable name/token image design. Rootardio would be one example, but ultimately these should be decided by the community.
+2. Well aligned. Because these would be dropped to Rootlet NFTs over the course of 6 months, the success of $ROOT would increase the price of the NFTs as future airdrops would have to be factored in to floor price.
+3. Good distribution. Every Rootlet would share in the success of $ROOT, and minimal would go to outsiders.
 
-## Deploy on Vercel
+Another benefit is that we would have an ample treasury to spend on any community initiatives and support now that capsules are coming to a close.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This would probably be negative for ROOT(V1) at least in the short term. All things to consider.
