@@ -9,7 +9,7 @@ $ROOT(V1) was launched publicly via BlueMove. There was minimal buy-in from the 
 Problems:
 
 1. Limited memeability. "Rootlet" is not a good meme. Unless you are already familiar with the NFT, you won't even know what it is. It should quickly grab attention and explain itself.
-2. Poorly aligned. $ROOT success is not tied to Rootlet's success. They feel disconnected. Only some of the community get's to participate.
+2. Poorly aligned. $ROOT success is not tied to Rootlet's success. They feel disconnected. Only some of the community gets to participate.
 3. Poor distribution. 20% share is not enough to embrace this as a community coin.
 
 The only upside in the current coin is it's hasty launch, and distribution could be seen as so bad that it almost fit's the rootarded brand.
